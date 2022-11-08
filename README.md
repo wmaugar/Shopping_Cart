@@ -46,23 +46,24 @@
 
 ## :dart: About ##
 
-Describe your project
+This is a Shopping Cart, its UI has three sections, product List, Cart Contents and Check Out.
+From Product List, user can select an item from the list, when selected, the application reduces stock in product list, add new item in Cart Contents, and updates total Cost in checkout.
+There is an additional feature to re-stock the product List, when stock runs out, application can hit an Strapi Data Base server to add a new list of items. 
 
 ## :sparkles: Features ##
 
-:heavy_check_mark: Feature 1;\
-:heavy_check_mark: Feature 2;\
-:heavy_check_mark: Feature 3;
+:heavy_check_mark: Select items from Product List and Add to Cart Contents \
+:heavy_check_mark: Delete item from Cart Contents and update stock in product List\
+:heavy_check_mark: Update Check Out;
+:heavy_check_mark: Re-stock Product List from a Strapi DB;
 
 ## :rocket: Technologies ##
 
 The following tools were used in this project:
 
-- [Expo](https://expo.io/)
 - [Node.js](https://nodejs.org/en/)
 - [React](https://pt-br.reactjs.org/)
-- [React Native](https://reactnative.dev/)
-- [TypeScript](https://www.typescriptlang.org/)
+- [Strapi](https://strapi.io/)
 
 ## :white_check_mark: Requirements ##
 
@@ -74,16 +75,13 @@ Before starting :checkered_flag:, you need to have [Git](https://git-scm.com) an
 # Clone this project
 $ git clone https://github.com/wmaugar/shopping_cart
 
-# Access
-$ cd shopping_cart
+# start server
+$ http-server -c-1
 
-# Install dependencies
-$ yarn
+# start strapi DB
+$ npm run develop
 
-# Run the project
-$ yarn start
-
-# The server will initialize in the <http://localhost:3000>
+# The server will initialize in the <http://localhost:8080>
 ```
 
 ## :memo: License ##
