@@ -54,8 +54,8 @@ There is an additional feature to re-stock the product List, when stock runs out
 
 :heavy_check_mark: Select items from Product List and Add to Cart Contents \
 :heavy_check_mark: Delete item from Cart Contents and update stock in product List\
-:heavy_check_mark: Update Check Out;
-:heavy_check_mark: Re-stock Product List from a Strapi DB;
+:heavy_check_mark: Update Check Out\
+:heavy_check_mark: Re-stock Product List from a Strapi DB
 
 ## :rocket: Technologies ##
 
