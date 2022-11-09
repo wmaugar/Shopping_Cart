@@ -190,9 +190,11 @@ const Products = (props) => {
   };
   // TODO: implement the restockProducts function
   const restockProducts = (url) => {
+    
     doFetch (url);  
     let newData = data.data;
     let newItems = [];
+
     newData.map((item) =>{
       newItems.push(item.attributes);
     });
@@ -204,6 +206,7 @@ const Products = (props) => {
 
   return (
     <Container>
+      <h1 style={{textAlign: "center"}}>React Shopping Cart</h1>
       <Row>
         <Col>
           <h1>Product List</h1>
@@ -220,7 +223,7 @@ const Products = (props) => {
         </Col>
       </Row>
       <Row>
-        <form
+        <form 
           onSubmit={(event) => {
             restockProducts(`http://localhost:1337/${query}`);
             console.log(`Restock called on ${query}`);
